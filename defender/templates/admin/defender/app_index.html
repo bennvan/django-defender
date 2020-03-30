@@ -29,8 +29,8 @@
 {% block footer %}
 {{ block.super }}
 <script>
-$(document).ready(function(){
-  $('#content-main').appendChild($('#blocked-users'))
-});
+window.onload = function (){
+document.getElementById('content-main').appendChild(document.getElementById('blocked-users'))
+}
 </script>
 {% endblock footer %}
