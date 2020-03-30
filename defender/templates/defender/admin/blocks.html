@@ -1,7 +1,7 @@
 {% extends "admin/base_site.html" %}
 {% load i18n admin_urls %}
 
-{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
+{% block bodyclass %}{{ block.super }} dashboard app-defender {% endblock %}
 
 {% block extrastyle %}
 {{ block.super }}
@@ -16,7 +16,7 @@
 {% endblock breadcrumbs %}
 
 {% block content %}
-
+<div id="content-main">
 <h1>Blocked Logins</h1>
 <p>Here is a list of IP's and usernames that are blocked</p>
 
@@ -68,5 +68,6 @@
 </tbody>
 </table>
 
+</div>
 </div>
 {% endblock content %}
